@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3c8dbc;
+  min-height: 3.125rem;
+}
+.main-header div a {
+  text-decoration: none;
+  color: white;
+}
+.nav-left1 {
+  display: flex;
+  min-height: 3.125rem;
+  background-color: #367fa9;
+  width: 10.4rem;
+  padding-left: 4rem;
+  align-items: center;
+}
+.nav-left2 {
+  align-items: center;
+  justify-content: center;
+  min-width: 3.125rem;
+}
+.nav-left1 a {
+  font-size: 1.25rem;
+}
+.nav-right,
+.nav-left-main,
+.nav-left2 {
+  display: flex;
+}
+.nav-right div ul {
+  display: flex;
+  align-items: center;
+}
+.nav-right div ul li {
+  display: flex;
+  padding: 0 0.6rem 0 0.6rem;
+  align-items: center;
+  color: white;
+  min-height: 3rem;
+  list-style: none;
+  font-size: 0.875rem;
+}
+.nav-right div ul li:hover,
+.nav-left2:hover {
+  background-color: #367fa9;
+}
+.nav-left-notification {
+  top: 9px;
+  right: 7px;
+  text-align: center;
+  font-size: 9px;
+  padding: 2px 3px;
+  line-height: 0.9;
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+}
+.nav-msg-noti {
+  background-color: #00a65a;
+}
+.nav-bell-noti {
+  background-color: #f39c12;
+}
+.nav-flag-noti {
+  background-color: #dd4b39;
+}
+.nav-right-2 {
+  display: flex;
+  align-items: center;
+}
+.nav-right-2 div img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 0.625rem;
+  margin-top: -0.125rem;
+}
