@@ -4,10 +4,11 @@
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .aside-main {
+  position: absolute;
   color: white;
   background-color: #222d32;
-  width: 18.5vw;
-  height: 500vh;
+  width: 230px;
+  min-height: 100%
 }
 .aside-main div div a {
   text-decoration: none;
@@ -116,8 +117,12 @@
 .navigation-link-text {
   margin-left: 0.5rem;
 }
-.aside-menu > li:hover {
+.aside-menu >li> a:hover {
   background: #1a2226;
+  color:white;
+}
+.aside-menu >li> ul>li>a:hover {
+  color: white;
 }
 .aside-notification {
   display: inline;
@@ -162,12 +167,14 @@
 
 /* Animation */
 .accordian {
+  background-color: #374850;
   position: relative;
   overflow: hidden;
   max-height: 0;
   transition: 1.5s all ease-in-out;
 }
 .accordian1 {
+  background-color: #374850;
   position: relative;
   overflow: hidden;
   max-height: 10rem;
