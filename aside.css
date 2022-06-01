@@ -174,4 +174,12 @@
   transition: 2s;
 }
 
-/* :end */
+.rotate-angle-close{
+  transform: rotate(0deg);
+  transition: transform 1s ease-in-out;
+}
+.rotate-angle-open{
+  transform: rotate(-90deg);
+  transition: transform 1s ease-in-out;
+}
+/* Animation */
