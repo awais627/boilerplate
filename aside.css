@@ -171,22 +171,23 @@
   position: relative;
   overflow: hidden;
   max-height: 0;
-  transition: 1s ease-in;
+  transition: 0.7s ease-in;
 }
 .accordian1 {
   background-color: #374850;
   position: relative;
   overflow: hidden;
-  max-height: 10rem;
-  transition: 1s ease-out;
+  max-height: 7rem;
+  transition: 0.7s ease-in;
+
 }
 
 .rotate-angle-close{
   transform: rotate(0deg);
-  transition: transform 1s ease-in-out;
+  transition: transform 0.7s ease-in-out;
 }
 .rotate-angle-open{
   transform: rotate(-90deg);
-  transition: transform 1s ease-in-out;
+  transition: transform 0.7s ease-in-out;
 }
 /* Animation */
