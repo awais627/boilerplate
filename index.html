@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/58c2f56a42.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="aside.css">
     <title>Document</title>
 </head>
 
@@ -57,6 +58,65 @@
             </nav>
         </header>
     </section>
+    <section>
+        <aside>
+            <div class="aside-main">
+                <div class="aside-main-profile">
+                    <div class="aside-main-profile-left">
+                        <img src="./assets/img/user2.jpg" alt="">
+                    </div>
+                    <div class="aside-main-profile-right">
+                        <p>Alexander Pierce</p>
+                        <a href="#/"><i class="fa fa-circle"></i> Online</a>
+                    </div>
+                </div>
+                <div>
+                    <form>
+                        <div class="aside-search">
+                            <input class="aside-input" type="text" placeholder="search..">
+                            <button type="submit" name="search" id="search-btn" class="aside-btn"><i
+                                    class="fa fa-search aside-logo"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div>
+                    <ul class="aside-menu">
+                        <li class="main-navigation">MAIN NAVIGATION</li>
+                        <li onclick="accoridan(this)">
+                            <a class="navigation-link" href="#/">
+                                <div>
+                                    <i class="fa fa-dashboard"></i>
+                                    <span class="navigation-link-text">User</span>
+                                </div>
+
+                                <span class="navigation-angle">
+                                    <i class="fa fa-angle-left pull-right rotate-angle-close"></i>
+                                </span>
+                            </a>
+                            <ul class="accordian">
+                                <li>
+                                    <a class="navigation-link" href="#/">
+                                        <div>
+                                            <i class="fa fa-circle-o navigation-circle3"></i>
+                                            <span class="navigation-link-text">User 1</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li><a class="navigation-link" href="#/">
+                                        <div>
+                                            <i class="fa fa-circle-o navigation-circle3"></i>
+                                            <span class="navigation-link-text">User 2</span>
+                                        </div>
+                                    </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+    </section>
+    <script src="./script.js"></script>
 </body>
 
 </html>
