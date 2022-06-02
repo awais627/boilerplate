@@ -1,3 +1,7 @@
+.tablesection{
+  margin-top: 3rem;
+  margin-left: 2rem;
+}
 .table-main > div {
   padding: 0 2rem;
 }
@@ -27,6 +31,7 @@ th {
   font-size: 18px;
   font-weight: 500;
   line-height: 1;
+ 
 }
 .dataTable>thead > tr > th {
   position: relative;

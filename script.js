@@ -5,7 +5,7 @@ const accoridan = (e) => {
     const accordianAll = document.querySelectorAll(".accordian1")[0];
     const rotateAngleOpen = document.querySelectorAll(".rotate-angle-open")[0];
     if (accordian[0] === "accordian") {
-        if (accordianAll!== undefined) {
+        if (accordianAll !== undefined) {
             accordianAll.classList.remove("accordian1");
             accordianAll.classList.add("accordian");
             rotateAngleOpen.classList.remove("rotate-angle-open")
@@ -16,10 +16,23 @@ const accoridan = (e) => {
         angel.remove("rotate-angle-close");
         angel.add("rotate-angle-open");
     }
-    else{
+    else {
         accordian.remove("accordian1");
         accordian.add('accordian');
         angel.remove("rotate-angle-open");
         angel.add("rotate-angle-close");
+    }
+}
+
+const htmlopen = (e) => {
+    const form = document.getElementsByClassName("formsection")[0];
+    const table = document.getElementsByClassName("tablesection")[0];
+    if (e.id === "formsection") {
+        table.style.display = 'none';
+        form.style.display = 'block';
+    }
+    else {
+        form.style.display = 'none';
+        table.style.display = 'block';
     }
 }

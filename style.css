@@ -82,3 +82,12 @@
   margin-right: 0.625rem;
   margin-top: -0.125rem;
 }
+
+.tablesection{
+  display: none;
+}
+/* grid system */
+.grid-container{
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}

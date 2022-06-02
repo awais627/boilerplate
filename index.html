@@ -8,114 +8,298 @@
     <script src="https://kit.fontawesome.com/58c2f56a42.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="aside.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="datatable.css">
     <title>Document</title>
 </head>
 
 <body>
-    <section>
-        <header class="main-header">
-            <div class="nav-left-main">
-                <div class="nav-left1">
-                    <a href="">
-                        <b>Admin</b>LTE
-                    </a>
+    <div>
+        <section>
+            <header class="main-header">
+                <div class="nav-left-main">
+                    <div class="nav-left1">
+                        <a href="">
+                            <b>Admin</b>LTE
+                        </a>
+                    </div>
+                    <div class="nav-left2">
+                        <a href="#/" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                            <i class="fa-solid fa-bars"></i>
+                            <span class="sr-only">Toggle navigation</span>
+                        </a>
+                    </div>
                 </div>
-                <div class="nav-left2">
-                    <a href="#/" class="sidebar-toggle" data-toggle="push-menu" role="button">
-                        <i class="fa-solid fa-bars"></i>
-                        <span class="sr-only">Toggle navigation</span>
-                    </a>
-                </div>
-            </div>
 
-            <nav class="nav-right">
-                <div>
-                    <ul>
-                        <li>
-                            <a href=""><i class="fa fa-envelope-o"></i></a>
-                            <div class="nav-msg-noti nav-left-notification"><span>4</span></div>
-                        </li>
-                        <li>
-                            <a href=""><i class="fa fa-bell-o"></i></a>
-                            <div class="nav-bell-noti nav-left-notification"><span>10</span></div>
-                        </li>
-                        <li>
-                            <a href=""><i class="fa fa-flag-o"></i></a>
-                            <div class="nav-flag-noti nav-left-notification"><span>9</span></div>
-                        </li>
-                        <li>
-                            <div class="nav-right-2">
-                                <div>
-                                    <img src="./assets/img/AminLte.jpeg" alt="">
+                <nav class="nav-right">
+                    <div>
+                        <ul>
+                            <li>
+                                <a href=""><i class="fa fa-envelope-o"></i></a>
+                                <div class="nav-msg-noti nav-left-notification"><span>4</span></div>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa fa-bell-o"></i></a>
+                                <div class="nav-bell-noti nav-left-notification"><span>10</span></div>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa fa-flag-o"></i></a>
+                                <div class="nav-flag-noti nav-left-notification"><span>9</span></div>
+                            </li>
+                            <li>
+                                <div class="nav-right-2">
+                                    <div>
+                                        <img src="./assets/img/AminLte.jpeg" alt="">
+                                    </div>
+                                    <span>Alexander Pierce</span>
                                 </div>
-                                <span>Alexander Pierce</span>
+                            </li>
+                            <li><a href=""><i class="fa fa-cogs" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+
+                </nav>
+            </header>
+        </section>
+        <div class="grid-container">
+            <section class="grid-item1">
+                <aside>
+                    <div class="aside-main">
+                        <div class="aside-main-profile">
+                            <div class="aside-main-profile-left">
+                                <img src="./assets/img/user2.jpg" alt="">
                             </div>
-                        </li>
-                        <li><a href=""><i class="fa fa-cogs" aria-hidden="true"></i></a></li>
-                    </ul>
-                </div>
-
-            </nav>
-        </header>
-    </section>
-    <section>
-        <aside>
-            <div class="aside-main">
-                <div class="aside-main-profile">
-                    <div class="aside-main-profile-left">
-                        <img src="./assets/img/user2.jpg" alt="">
-                    </div>
-                    <div class="aside-main-profile-right">
-                        <p>Alexander Pierce</p>
-                        <a href="#/"><i class="fa fa-circle"></i> Online</a>
-                    </div>
-                </div>
-                <div>
-                    <form>
-                        <div class="aside-search">
-                            <input class="aside-input" type="text" placeholder="search..">
-                            <button type="submit" name="search" id="search-btn" class="aside-btn"><i
-                                    class="fa fa-search aside-logo"></i>
-                            </button>
+                            <div class="aside-main-profile-right">
+                                <p>Alexander Pierce</p>
+                                <a href="#/"><i class="fa fa-circle"></i> Online</a>
+                            </div>
                         </div>
-                    </form>
-                </div>
-                <div>
-                    <ul class="aside-menu">
-                        <li class="main-navigation">MAIN NAVIGATION</li>
-                        <li onclick="accoridan(this)">
-                            <a class="navigation-link" href="#/">
-                                <div>
-                                    <i class="fa fa-dashboard"></i>
-                                    <span class="navigation-link-text">User</span>
+                        <div>
+                            <form>
+                                <div class="aside-search">
+                                    <input class="aside-input" type="text" placeholder="search..">
+                                    <button type="submit" name="search" id="search-btn" class="aside-btn"><i
+                                            class="fa fa-search aside-logo"></i>
+                                    </button>
                                 </div>
+                            </form>
+                        </div>
+                        <div>
+                            <ul class="aside-menu">
+                                <li class="main-navigation">MAIN NAVIGATION</li>
+                                <li onclick="accoridan(this)">
+                                    <a class="navigation-link" href="#/">
+                                        <div>
+                                            <i class="fa fa-dashboard"></i>
+                                            <span class="navigation-link-text">User</span>
+                                        </div>
 
-                                <span class="navigation-angle">
-                                    <i class="fa fa-angle-left pull-right rotate-angle-close"></i>
-                                </span>
-                            </a>
-                            <ul class="accordian">
-                                <li>
-                                    <a class="navigation-link" href="./form.html">
-                                        <div>
-                                            <i class="fa fa-circle-o navigation-circle3"></i>
-                                            <span class="navigation-link-text">User 1</span>
-                                        </div>
+                                        <span class="navigation-angle">
+                                            <i class="fa fa-angle-left pull-right rotate-angle-close"></i>
+                                        </span>
                                     </a>
+                                    <ul class="accordian">
+                                        <li onclick="htmlopen(this)" id="formsection">
+                                            <a class="navigation-link" href="#/">
+                                                <div>
+                                                    <i class="fa fa-circle-o navigation-circle3"></i>
+                                                    <span class="navigation-link-text">User 1</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li onclick="htmlopen(this)" id="tablesection">
+                                            <a class="navigation-link" href="#/">
+                                                <div>
+                                                    <i class="fa fa-circle-o navigation-circle3"></i>
+                                                    <span class="navigation-link-text">User 2</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </li>
-                                <li><a class="navigation-link" href="./datatable.html">
-                                        <div>
-                                            <i class="fa fa-circle-o navigation-circle3"></i>
-                                            <span class="navigation-link-text">User 2</span>
-                                        </div>
-                                    </a></li>
                             </ul>
-                        </li>
-                    </ul>
-                </div>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+            <div class="griditem2">
+
+                <section class="formsection">
+                    <div class="container">
+                        <div class="box-header">
+                            <h3 class="box-title">Quick Example</h3>
+                        </div>
+                        <form role="form">
+                            <div class="form-main">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1"
+                                        placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <label class="filelabel" for="exampleInputFile">File input</label>
+                                    <div>
+                                        <input type="file" id="exampleInputFile">
+                                        <p class="help-block">Example block-level help text here.</p>
+                                    </div>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Check me out
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-footer">
+                                <button type="submit" class="form-submit-btn">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <section class="tablesection">
+                        <div class="table-main">
+                            <div>
+                                <h2 class="tabel-heading">Hover Data Table</h2>
+                                <table class="dataTable">`
+                                    <thead>
+                                        <tr class="thead-row">
+                                            <th>
+                                                Rendering engin
+                                            </th>
+                                            <th>Browser</th>
+                                            <th>platforms(s)</th>
+                                            <th>Engin version</th>
+                                            <th>CSS grade</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Webkit</td>
+                                            <td>iPod Touch / iPhone</td>
+                                            <td>iPod</td>
+                                            <td>420.1</td>
+                                            <td>A</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Webkit</td>
+                                            <td>iPod Touch / iPhone</td>
+                                            <td>iPod</td>
+                                            <td>420.1</td>
+                                            <td>A</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Webkit</td>
+                                            <td>iPod Touch / iPhone</td>
+                                            <td>iPod</td>
+                                            <td>420.1</td>
+                                            <td>A</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Webkit</td>
+                                            <td>iPod Touch / iPhone</td>
+                                            <td>iPod</td>
+                                            <td>420.1</td>
+                                            <td>A</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Webkit</td>
+                                            <td>iPod Touch / iPhone</td>
+                                            <td>iPod</td>
+                                            <td>420.1</td>
+                                            <td>A</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>Webkit</td>
+                                            <td>iPod Touch / iPhone</td>
+                                            <td>iPod</td>
+                                            <td>420.1</td>
+                                            <td>A</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Webkit</td>
+                                            <td>iPod Touch / iPhone</td>
+                                            <td>iPod</td>
+                                            <td>420.1</td>
+                                            <td>A</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Webkit</td>
+                                            <td>iPod Touch / iPhone</td>
+                                            <td>iPod</td>
+                                            <td>420.1</td>
+                                            <td>A</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Webkit</td>
+                                            <td>iPod Touch / iPhone</td>
+                                            <td>iPod</td>
+                                            <td>420.1</td>
+                                            <td>A</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Webkit</td>
+                                            <td>iPod Touch / iPhone</td>
+                                            <td>iPod</td>
+                                            <td>420.1</td>
+                                            <td>A</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th rowspan="1" colspan="1">Rendering engine</th>
+                                            <th rowspan="1" colspan="1">Browser</th>
+                                            <th rowspan="1" colspan="1">Platform(s)</th>
+                                            <th rowspan="1" colspan="1">Engine version</th>
+                                            <th rowspan="1" colspan="1">CSS grade</th>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <div class="pagination-main">
+                                <div>
+                                    <p>Showing 1 to 10 of 57 entries</p>
+                                </div>
+                                <div class="pagination">
+                                    <ul>
+                                        <li>
+                                            <a href="#/">Previous</a>
+                                        </li>
+                                        <li>
+                                            <a href="#/">1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#/">3</a>
+                                        </li>
+                                        <li>
+                                            <a href="#/">2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#/">4</a>
+                                        </li>
+                                        <li>
+                                            <a href="#/">5</a>
+                                        </li>
+                                        <li>
+                                            <a href="#/">6</a>
+                                        </li>
+                                        <li>
+                                            <a href="#/">Next</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
             </div>
-        </aside>
-    </section>
+        </div>
+    </div>
     <script src="./script.js"></script>
 </body>
 
