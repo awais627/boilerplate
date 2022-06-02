@@ -171,14 +171,14 @@
   position: relative;
   overflow: hidden;
   max-height: 0;
-  transition: 1.5s all ease-in-out;
+  transition: 1s ease-in;
 }
 .accordian1 {
   background-color: #374850;
   position: relative;
   overflow: hidden;
   max-height: 10rem;
-  transition: 2s;
+  transition: 1s ease-out;
 }
 
 .rotate-angle-close{
