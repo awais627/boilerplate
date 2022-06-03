@@ -37,13 +37,6 @@ th {
   position: relative;
   cursor: pointer;
 }
-.dataTable>thead > tr > th::after {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f884";
-  margin-left: 7rem;
-}
-
 /* Pagination css */
 
 .pagination-main {
